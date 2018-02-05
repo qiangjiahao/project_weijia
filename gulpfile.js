@@ -6,22 +6,27 @@ var sass = require("gulp-sass");
 //添加copy-html任务,保存到指定目录
 gulp.task("copy-html",function(){
 	gulp.src("*.html").pipe(gulp.dest("D:\\phpStudy\\WWW\\project_weijia"));
+	gulp.src("*.html").pipe(gulp.dest("E:\\exp1\\public"));
 });
 //添加copy-imgs任务,保存到指定目录
 gulp.task("copy-imgs",function(){
 	gulp.src("imgs/*.{jpg,png}").pipe(gulp.dest("D:\\phpStudy\\WWW\\project_weijia\\imgs"));
+	gulp.src("imgs/*.{jpg,png}").pipe(gulp.dest("E:\\exp1\\public\\imgs"));
 });
 //添加cpoy-css任务,保存到指定目录
 gulp.task("copy-css",function(){
 	gulp.src("css/*.css").pipe(gulp.dest("D:\\phpStudy\\WWW\\project_weijia\\css"));
+	gulp.src("imgs/*.{jpg,png}").pipe(gulp.dest("E:\\exp1\\public\\css"));
 });
 //将转换成的js文件放到指定目录下
 gulp.task("copy-js",function(){
 	gulp.src("js/*.js").pipe(gulp.dest("D:\\phpStudy\\WWW\\project_weijia\\js"));
+	gulp.src("imgs/*.{jpg,png}").pipe(gulp.dest("E:\\exp1\\public\\js"));
 });
 //将转换成的php文件放到指定目录下
 gulp.task("copy-php",function(){
 	gulp.src("php/*.php").pipe(gulp.dest("D:\\phpStudy\\WWW\\project_weijia\\php"));
+	gulp.src("imgs/*.{jpg,png}").pipe(gulp.dest("E:\\exp1\\public\\php"));
 });
 
 //添加sass转换到css任务
