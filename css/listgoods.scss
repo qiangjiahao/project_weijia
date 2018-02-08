@@ -1,0 +1,128 @@
+//H5响应式建站系统
+.lg1{
+    background-color: #6fba2c;
+    color: #ffffff;
+    padding: 40px 0;
+    .lg1_c{
+        .lg1_c1{
+            width: 100%;
+            h3{
+                font-size: 24px;
+                font-weight: normal;
+            }
+            h4{
+                font-size: 16px;
+                margin-top: 8px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+//客户案例
+.lg2{
+    padding: 35px 0;
+    .lg2_c{
+        .lg2_r{
+            width: 100%;
+            .lg2_r1{
+                margin: 0 -15px;
+                overflow: hidden;
+                .lg2_case{
+                    float: left;
+                    width: 25%;
+                    padding: 0 15px;
+                    .l2{
+                        border: 1px solid #f1f1f1;
+                        position: relative;
+                        margin-bottom: 30px;
+                        .l2_top{
+                            position: relative;
+                            height: 180px;
+                            overflow: hidden;
+                            border-bottom: 1px solid #f4f4f4;
+                            a{
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                img{
+                                    max-width: 100%;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .l2_bottom{
+                            text-align: center;
+                            padding-right: 5px;
+                            padding-bottom: 5px;
+                            padding-left: 5px;
+                            .l2_b1{
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                padding: 8px;
+                                a{
+                                    color: #333;
+                                }
+                            }
+                            .l2_b2{
+                                color: #999;
+                                line-height: 1.6em;
+                                overflow: hidden;
+                                font-size: 12px;
+                                text-align: left;
+                                background-color: #F5F5F5;
+                                padding: 5px 8px;
+                                height: 48px;
+                                a{
+                                    font-size: 12px;
+                                    color: #999;
+                                }
+                            }
+                            .l2_b3{
+                                overflow: hidden;
+                                a{
+                                    color: #fff;
+                                    padding-top: 4px;
+                                    padding-bottom: 4px;
+                                    width: 50%;
+                                }
+                                a:first-child{
+                                    float: left;
+                                    background-color: #005bac;
+                                }
+                                a:last-child{
+                                    float: right;
+                                    
+                                    background-color: #6fba2c;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .lg2_r2{
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+//媒体查询
+@media (max-width:991px){
+    .lg2{
+        .lg2_case{
+            width: 33.33333333% !important;
+        }
+    }
+}
+@media (max-width:767px){
+    .lg2{
+        .lg2_case{
+            width: 50% !important;
+            
+        }
+    }
+}

@@ -91,3 +91,151 @@ $(function () {
     //3、自动播放
     autoPlay();
 });
+
+//头部
+$(".h_a").mouseenter(function(){
+	$(this).css({"background-color":"#eeeeee","border-top":"2px solid #005bac","color":"#0a6ebd"});
+});
+$(".h_a").mouseleave(function(){
+	$(this).css({"background-color":"#fff","border-top":"2px solid #fff","color":"#666"});
+});
+
+$(".h_aa").mouseenter(function(){
+	$(".h_uls").animate({"top":"100%","opacity":"1"},600);
+	$(".f_p li:nth-of-type(4) .h_a").css({"background-color":"#eeeeee","border-top":"2px solid #005bac","color":"#0a6ebd"});
+	$(this).stop();
+});
+$(".h_aa").mouseleave(function(){
+	$(".h_uls").animate({"top":"140%","opacity":"0"},600);
+	$(".f_p li:nth-of-type(4) .h_a").css({"background-color":"#fff","border-top":"2px solid #fff","color":"#666"});
+});
+
+$(".h_d3 a").mouseenter(function(){
+	$(this).css({"color":"#0a6ebd"});
+});
+$(".h_d3 a").mouseleave(function(){
+	$(this).css({"color":"#999"});
+});
+
+//section1
+$(".s1_c2_a a").mouseenter(function(){
+	$(this).css({"background-color":"rgba(255, 55, 0, 0.85)"});
+});
+$(".s1_c2_a a").mouseleave(function(){
+	$(this).css({"background-color":"rgba(255, 55, 0, 0.65)"});
+});
+
+//section2
+$(".scc_d3 a").mouseenter(function(){
+	$(this).css({"color":"#FF3700","border-color":"#FF3700","background-color":"#fff"});
+});
+$(".scc_d3 a").mouseleave(function(){
+	$(this).css({"color":"#fff","border-color":"#fff","background-color":"rgba(255,255,255,0.0)"});
+});
+
+//section3
+$(".s3_d2_box").mouseenter(function(){
+	$(this).css({"border-color":"#FF3700"});
+	$(this).animate({"position":"relative","top":"-10px"},600);
+});
+$(".s3_d2_box").mouseleave(function(){
+	$(this).css({"border-color":"#ccc"});
+	$(this).animate({"position":"relative","top":"0px"},600);
+});
+
+//section7
+setInterval(function(){
+	$(".s7_o2_c1").ready(function(){
+		$(".s7_o2_c1").animate({"margin-top": "-60px"},800);
+	});
+	$(".s7_o2_c1").ready(function(){
+		$(".s7_o2_c1").animate({"margin-top": "-50px"},800);
+	});	
+},1000);
+setInterval(function(){
+	$(".s7_o2_c2").ready(function(){
+		$(".s7_o2_c2").animate({"margin-top": "30px"},600);
+	});
+	$(".s7_o2_c2").ready(function(){
+		$(".s7_o2_c2").animate({"margin-top": "20px"},600);
+	});	
+},1000);
+setInterval(function(){
+	$(".s7_o2_c3").ready(function(){
+		$(".s7_o2_c3").animate({"margin-top": "-60px"},950);
+	});
+	$(".s7_o2_c3").ready(function(){
+		$(".s7_o2_c3").animate({"margin-top": "-50px"},950);
+	});	
+},1000);
+setInterval(function(){
+	$(".s7_o2_c4").ready(function(){
+		$(".s7_o2_c4").animate({"margin-top": "-60px"},850);
+	});
+	$(".s7_o2_c4").ready(function(){
+		$(".s7_o2_c4").animate({"margin-top": "-50px"},850);
+	});	
+},1000);
+setInterval(function(){
+	$(".s7_o2_c5").ready(function(){
+		$(".s7_o2_c5").animate({"margin-top": "-60px"},800);
+	});
+	$(".s7_o2_c5").ready(function(){
+		$(".s7_o2_c5").animate({"margin-top": "-50px"},800);
+	});	
+},1000);
+
+//section9
+$(".s9_x2 form input:nth-of-type(6)").hover(
+	function(){
+		$(this).css({"opacity":"0.8"});
+	},
+	function(){
+		$(this).css({"opacity":"1"});
+	}
+);
+//section10
+$(".s10_t").hover(
+	function(){
+		$(".s10_t1").css({"color":"#1aad19"});
+	},
+	function(){
+		$(".s10_t1").css({"color":"#333"});
+	}
+);
+$(".s10_y1").mouseenter(function(){
+	$(this).css({"color":"#1aad19"});
+});
+$(".s10_y1").mouseleave(function(){
+	$(this).css({"color":"#333"});
+});
+
+//section11
+$(".s11_r a").mouseenter(function(){
+	$(this).css({"color":"#fff"});
+});
+$(".s11_r a").mouseleave(function(){
+	$(this).css({"color":"#999"});
+});
+
+//section12
+$(".s12_r1 a").mouseenter(function(){
+	$(this).css({"color":"#ccc"});
+});
+$(".s12_r1 a").mouseleave(function(){
+	$(this).css({"color":"#fff"});
+});
+$(".s12_t1 a").mouseenter(function(){
+	$(this).css({"color":"#ccc"});
+});
+$(".s12_t1 a").mouseleave(function(){
+	$(this).css({"color":"#fff"});
+});
+
+//section13
+$(".s13_q1 a").mouseenter(function(){
+	$(this).css({"color":"#0a6ebd"});
+});
+$(".s13_q1 a").mouseleave(function(){
+	$(this).css({"color":"#aaaaaa"});
+});

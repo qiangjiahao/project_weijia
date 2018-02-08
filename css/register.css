@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  box-sizing: border-box; }
+
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, form, hr, h1, h2, h3, h4, h5, h6, img, input {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑",Arial;
+  font-size: 14px;
+  color: #333333;
+  background-color: #ffffff;
+  background: url(../imgs/login_bg.jpg) no-repeat; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+img, input {
+  border: 0; }
+
+img {
+  display: inline-block; }
+
+.header {
+  margin: 100px auto 50px auto;
+  text-align: center; }
+  .header img {
+    vertical-align: middle; }
+
+.content {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.02);
+  position: relative;
+  display: flex; }
+  .content .c_left {
+    flex: 1; }
+    .content .c_left img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+  .content .c_right {
+    color: #555;
+    flex: 1;
+    padding: 10px 55px; }
+    .content .c_right .f1 .f1_d1 {
+      color: #445063;
+      line-height: 1;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+      .content .c_right .f1 .f1_d1 span:first-child {
+        font-size: 26px;
+        font-weight: bold;
+        position: relative; }
+        .content .c_right .f1 .f1_d1 span:first-child i {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: #445063;
+          position: absolute;
+          top: 18px; }
+        .content .c_right .f1 .f1_d1 span:first-child i:first-child {
+          left: -30px; }
+        .content .c_right .f1 .f1_d1 span:first-child i:last-child {
+          right: -30px; }
+      .content .c_right .f1 .f1_d1 span:last-child {
+        font-size: 12px;
+        display: block;
+        margin-top: 8px; }
+    .content .c_right .f1 .f1_d2 {
+      border-bottom: 1px solid #dfe3ea;
+      padding: 8px 0;
+      margin: 0;
+      display: flex;
+      position: relative; }
+      .content .c_right .f1 .f1_d2 span {
+        background: url(../imgs/icon_user.png) no-repeat center center;
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        flex: 1; }
+      .content .c_right .f1 .f1_d2 .sp2 {
+        background: url(../imgs/icon_psw.png) no-repeat center center; }
+      .content .c_right .f1 .f1_d2 .sp3 {
+        background: url(../imgs/icon_code.png) no-repeat center center; }
+      .content .c_right .f1 .f1_d2 input {
+        flex: 9;
+        height: 34px;
+        padding: 6px 12px;
+        outline: none; }
+      .content .c_right .f1 .f1_d2 a {
+        padding: 6px 12px;
+        border-radius: 18px;
+        color: #fff;
+        line-height: 1.5;
+        background-color: #5bdab8;
+        position: absolute;
+        right: 0; }
+    .content .c_right .f1 .f1_d3 {
+      margin-top: 30px; }
+      .content .c_right .f1 .f1_d3 .f1_l {
+        text-align: left;
+        float: left; }
+        .content .c_right .f1 .f1_d3 .f1_l a {
+          color: #45cbbf;
+          margin-right: 10px;
+          margin-top: 10px;
+          display: inline-block; }
+      .content .c_right .f1 .f1_d3 .f1_r {
+        float: right; }
+        .content .c_right .f1 .f1_d3 .f1_r input {
+          color: #fff;
+          font-size: 18px;
+          border-radius: 25px;
+          border: 0;
+          padding: 10px 40px;
+          box-shadow: 3px 3px 8px rgba(68, 202, 192, 0.4);
+          background: -webkit-linear-gradient(top, #5ddcb7, #44cac0);
+          cursor: pointer; }
+    .content .c_right .f1 .f1_d4 {
+      text-align: left;
+      margin-top: 20px; }
+      .content .c_right .f1 .f1_d4 label {
+        cursor: pointer; }
+        .content .c_right .f1 .f1_d4 label input {
+          vertical-align: middle; }
+      .content .c_right .f1 .f1_d4 a {
+        color: #45cbbf; }
+
+.f_p::after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 370px;
+    margin: 0 auto; }
+    .content .c_left {
+      display: none; }
+    .content .c_right {
+      padding: 0 20px 20px; } }
+
+@media (max-width: 400px) {
+  .header {
+    margin: 30px 0 !important; }
+  .content {
+    margin: 0 15px; } }

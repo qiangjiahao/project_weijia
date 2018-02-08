@@ -56,15 +56,46 @@ img{
                         .h_nav{
                             height: 100%;
                             ul{
+                                padding: 0 30px;
                                 li{
                                     float: left;
-                                    a{
+                                    position: relative;
+                                    .h_a{
                                         display: block;
                                         height: 100%;
                                         padding: 30px 22px 31px;
                                         color: #666;
                                         font-size: 14px;
                                         border-top: 2px solid rgba(0,0,0,0);
+                                    }
+                                    .h_a1{
+                                        background-color:#eeeeee;
+                                        border-top:2px solid #005bac;
+                                        color:#0a6ebd;
+                                    }
+                                    .h_uls{
+                                        padding: 0;
+                                        position: absolute;
+                                        z-index: 2;
+                                        left: 0;
+                                        top: 140%;
+                                        width: 150%;
+                                        background-color: #fff;
+                                        text-align: center;
+                                        box-shadow: 0 2px 6px #ddd;
+                                        opacity: 0;
+                                        a{
+                                            color: #666;
+                                            display: block;
+                                            height: 44px;
+                                            line-height: 44px;
+                                        }
+                                        li:first-child a{
+                                            text-indent: 26px;
+                                        }
+                                        li:last-child a{
+                                            text-indent: 20px;
+                                        }
                                     }
                                 }
                             }
@@ -368,6 +399,7 @@ img{
     }
     .section3{
         padding: 60px 0;
+        background-color: #F7F7F7;
         .s3_c{
             .s3_c1{
                 .s3_d1{
@@ -403,9 +435,11 @@ img{
                         float: left;
                         .s3_d2_box{
                             text-align: center;
-                            border: 1px solid #d9d9d9;
+                            border: 1px solid #ccc;
+                            position: relative;
                             padding: 40px 0;
                             margin: 0 15px;
+                            background-color: #fff;
                             .s3_box{
                                 .s3_box1{
                                     height: 55px;
@@ -451,9 +485,11 @@ img{
                         float: left;
                         .s3_d2_box{
                             text-align: center;
-                            border: 1px solid #d9d9d9;
+                            border: 1px solid #ccc;
                             padding: 40px 0;
                             margin: 0 15px;
+                            position: relative;
+                            background-color: #fff;
                             .s3_box{
                                 .s3_box1{
                                     height: 55px;
@@ -1044,6 +1080,8 @@ img{
                                             border-color: #fff;
                                             padding: 6px 12px;
                                             border: 1px solid #d8d8d8;
+                                            outline: none;
+                                            caret-color: #fff; 
                                         }
                                         input::-webkit-input-placeholder{
                                             color: #fff;
@@ -1511,7 +1549,7 @@ img{
         width: 970px; 
     }
     .h_nav a{
-        padding: 0 12px !important;
+        padding: 30px 14px 31px !important;
     }
     .s4_p1{
         padding-top: 40px !important;
